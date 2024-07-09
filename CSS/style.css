@@ -131,7 +131,7 @@ section {
 
 .home-content .text-animate {
     position: relative;
-    width: 33rem;
+    width: 59rem;
 }
 
 /* .home-content .text-word {
@@ -148,20 +148,29 @@ section {
     animation-delay: 4s;
   } */
 
-.home-content .text-animate h3 {
+/* #text-color{
+    color: #ffffff;
+} */
+
+.home-content .text-style {
+    font-size: 3.8rem;
+    color: white;
+}
+
+.home-content .text-animate {
     font-family: "Freeman", sans-serif;
-    font-size: 3.7rem;
+    font-size: 3.8rem;
     font-weight: 900;
     color: transparent;
     letter-spacing: 0.2rem;
-    -webkit-text-stroke: .7px var(--main-color);
+    /* -webkit-text-stroke: .9px var(--main-color); */
     background-image: linear-gradient(var(--main-color), var(--main-color));
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-clip: padding-box;
     -webkit-background-clip: text;
     background-position: -33rem 0;
     animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .home-content .text-animate h3::before {
@@ -247,6 +256,7 @@ section {
     width: 170px;
     display: flex;
     justify-content: space-between;
+    animation: bounce 1.5s infinite;
 }
     
 .home-sci a {
@@ -304,6 +314,10 @@ section {
 .home-imghover:hover {
     background: var(--bg-color);
     opacity: .8;
+}
+
+.home__blob-img {
+    animation: bounce 2.5s infinite;
 }
 
 
@@ -663,6 +677,7 @@ span{
     justify-items: stretch;
     width: 100%;
     padding-bottom: 3rem;
+    animation: bounce 2s infinite;
   }
   
   .project {
@@ -1172,6 +1187,17 @@ display: block;
     }
 }
 
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 /* @keyframes textAnimation {
     0% {

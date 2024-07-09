@@ -71,3 +71,39 @@ showMoreLessBtn.addEventListener('click', () => {
     showMoreLessBtn.textContent = 'Show More';
   }
 });
+
+
+
+const designations = [
+  "Frontend Developer",
+  "Robotics Engineer",
+  "Electronics Engineer"
+];
+
+let currentDesignationIndex = 0;
+let currentCharacterIndex = 0;
+let typingText = document.getElementById("typing-text");
+
+function typeWriter() {
+  if (currentCharacterIndex < designations[currentDesignationIndex].length) {
+      typingText.textContent += designations[currentDesignationIndex][currentCharacterIndex];
+      currentCharacterIndex++;
+      setTimeout(typeWriter, 100); // adjust the speed of typing
+  } else {
+      setTimeout(eraseText, 2000); // wait for 2 seconds before erasing
+  }
+}
+
+function eraseText() {
+  if (currentCharacterIndex > 0) {
+      typingText.textContent = typingText.textContent.substring(0, currentCharacterIndex - 1);
+      currentCharacterIndex--;
+      setTimeout(eraseText, 50); // adjust the speed of erasing
+  } else {
+      currentDesignationIndex = (currentDesignationIndex + 1) % designations.length;
+      currentCharacterIndex = 0;
+      setTimeout(typeWriter, 500); // wait for 0.5 seconds before typing the next designation
+  }
+}
+
+typeWriter();
