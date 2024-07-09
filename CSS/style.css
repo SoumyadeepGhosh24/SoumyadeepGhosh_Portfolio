@@ -783,10 +783,25 @@ display: block;
 
   /* contact section styling */
 
-  .contact {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+.column {
+    flex-basis: 45%;
+    margin: 20px;
+}
+
+.contact {
     min-height: auto;
     padding-bottom: 7rem;
     background: var(--second-bg-color);
+}
+
+.contact-info{
+    font-size: 1.8rem;
+    text-decoration: double;
 }
 
 .contact form {
@@ -805,7 +820,7 @@ display: block;
 .contact form .input-box .input-field {
     position: relative;
     width: 49%;
-    margin: 1.5rem 0;
+    margin: 1.2rem 0;
 }
     
 .contact form .input-box .input-field input,
