@@ -824,7 +824,7 @@ display: block;
 } 
 .column {
     flex-basis: 45%;
-    margin: 20px;
+    margin: 21px;
 }
 
 .contact {
@@ -916,6 +916,47 @@ display: block;
     cursor: pointer;
 }
 
+
+.contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contact-sci{
+    animation: bounce 2s infinite;
+}
+
+.contact-sci a:hover{
+    color: var(--margin-navbar-color);
+}
+
+.contact-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--btn-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact-sci a:hover::before {
+    width: 100%;
+}
 
 /* footer section styling */
 
