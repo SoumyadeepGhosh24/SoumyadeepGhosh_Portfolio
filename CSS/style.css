@@ -343,6 +343,40 @@ section {
     text-align: center;
 }
 
+
+/* .about__container .about-content .text-animate {
+    position: relative;
+    width: 35rem;
+}
+
+.about__container .about-content .text-animate {
+    font-family: "Freeman", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    background-position: -33rem 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 1s;
+}
+
+.about__container .about-content .text-animate h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
+} */
+
+
 .bd-grid {
     max-width: 1024px;
     display: grid;
@@ -801,7 +835,15 @@ display: block;
 
 .contact-info{
     font-size: 1.8rem;
-    text-decoration: double;
+    text-decoration: none;
+    margin-top: 0;
+    padding: 10px 15.13px 16px;
+}
+
+.contact-info li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .contact form {
