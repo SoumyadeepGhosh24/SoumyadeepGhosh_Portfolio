@@ -73,7 +73,41 @@ showMoreLessBtn.addEventListener('click', () => {
 });
 
 
+// show more and show less button in acheivement section
+const showMorLesBtn = document.querySelector('#show-more-less-acheive');
+const hideProjects = document.querySelectorAll('.acheive.hidden');
 
+showMorLesBtn.addEventListener('click', () => {
+  hideProjects.forEach((acheive) => {
+    acheive.classList.toggle('hidden');
+  });
+  if (showMorLesBtn.textContent === 'Show More') {
+    showMorLesBtn.textContent = 'Show Less';
+  } 
+  else {
+    showMorLesBtn.textContent = 'Show More';
+  }
+});
+
+
+// show more and show less button in research paper section
+const showMorLesBtnResearch = document.querySelector('#show-more-less-research');
+const hideResearch = document.querySelectorAll('.research.hidden');
+
+showMorLesBtnResearch.addEventListener('click', () => {
+  hideResearch.forEach((acheive) => {
+    acheive.classList.toggle('hidden');
+  });
+  if (showMorLesBtnResearch.textContent === 'Show More') {
+    showMorLesBtnResearch.textContent = 'Show Less';
+  } 
+  else {
+    showMorLesBtnResearch.textContent = 'Show More';
+  }
+});
+
+
+// typewritter effect for designation role
 const designations = [
   "Frontend Developer",
   "Robotics Engineer",

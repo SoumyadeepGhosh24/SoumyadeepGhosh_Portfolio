@@ -815,6 +815,210 @@ display: block;
 }
 
 
+
+/* Acheivement section */
+.acheives {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .acheive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 30px;
+    align-content: center;
+    justify-items: stretch;
+    width: 100%;
+    padding-bottom: 3rem;
+    /* animation: bounce 2s infinite; */
+  }
+  
+  .acheive {
+    background-color: var(--second-bg-color);
+    padding: 8px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+    /* width: 300px; */
+    /* overflow: hidden; Hide the description initially */
+  }
+  
+  .acheive img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+    
+  .acheive h3 {
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(247, 222, 222);
+  }
+
+  .acheive img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  }
+
+/* .acheive:hover img {
+    opacity: 0.6;    
+} */
+
+/* .acheive:hover .description {
+    opacity: 1; 
+} */
+
+.hidden {
+display: none;
+}
+
+.show-more {
+display: block;
+}
+
+.show-less {
+display: none;
+}
+.work__img img {
+transition: 1s;
+}
+.work__img img:hover {
+transform: scale(1.1);
+}
+
+/* Toggle the show-more and show-less buttons on click */
+.show-more.clicked {
+display: none;
+}
+
+.show-less.clicked {
+display: block;
+}
+
+.btn-box .btns .shows {
+    display: flex;
+    justify-content: center;  
+}
+
+.acheives-grid.expanded {
+    max-height: 500px; /* Adjust this value to fit your needs */
+  }
+  
+.toggle-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+/* Research Paper section */
+.researches {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 30px;
+    align-content: center;
+    justify-items: stretch;
+    width: 100%;
+    padding-bottom: 3rem;
+    animation: bounce 2s infinite;
+  }
+  
+  .research {
+    background-color: var(--second-bg-color);
+    padding: 8px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+    /* width: 300px; */
+    /* overflow: hidden; Hide the description initially */
+  }
+  
+  .research img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+    
+  .research h3 {
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(247, 222, 222);
+  }
+
+  .research img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  }
+
+.hidden {
+display: none;
+}
+
+.show-more {
+display: block;
+}
+
+.show-less {
+display: none;
+}
+.work__img img {
+transition: 1s;
+}
+.work__img img:hover {
+transform: scale(1.1);
+}
+
+/* Toggle the show-more and show-less buttons on click */
+.show-more.clicked {
+display: none;
+}
+
+.show-less.clicked {
+display: block;
+}
+
+.btn-box .btns .shows {
+    display: flex;
+    justify-content: center;  
+}
+
+.researches-grid.expanded {
+    max-height: 500px; /* Adjust this value to fit your needs */
+  }
+  
+.toggle-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+
   /* contact section styling */
 
 .container {
